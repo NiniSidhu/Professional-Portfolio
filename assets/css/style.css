@@ -6,25 +6,28 @@
 
 header{
     padding: 20px 35px; 
-    background-color:chartreuse;
+    background-color:#31343d;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     top: 0;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    z-index: 9999;
-    
 }
 
-header h1{
+header h1{ /*Nayandeep Sidhu */
+   
+    padding-left: 50px;
     font-weight: bold;
     font-size: 36px;
-    margin: 0;
-    color: pink;
-    background-color: darkolivegreen;
-    
+    color: #31343d;
+}
+.title{ /*Nayandeep Sidhu Background */
+    background-color: #92cccd;
+    position: relative;
+    right: 30px;
+    bottom: 15px;
+    line-height: 1.7;
+    padding-left: 8px;
+    padding-right: 10px;
 }
 
 header nav ul{
@@ -36,26 +39,56 @@ header nav ul{
 }
 
 header nav ul li a{
-    padding: 10px 15px;
-    font-weight: lighter;
+    padding: 20px 30px;
+    font-weight: bolder;
     font-size: 1.5vw;
+    font-family: Helvetica, Arial, sans-serif;
+    color:#92cccd;
+    text-decoration: none;
 }
 
 .background{
-    background-position: cover;
+    background-image:url("../img/hero.PNG");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    z-index: 9999;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 80%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+       
+}
+.cool-txt-bck{
+    padding-bottom: 15px;
+    padding-right: 20px;
+}
+.cool-text {
     
-    width: 100%;
-    
+    background-color: #92cccd;
+    position: relative;
+    right:150px;
+    line-height: 1.7;
+    padding-left: 10px;
+    padding-right: 50px;
+    text-align:center;
+    font-size: xx-large;
+
+    /*position: relative;
+    left: 1000px;
+    bottom: 50px;
+
+    /*left: 80px;
+    bottom: 15px;
+    line-height: 1.7;
+    /*padding-left: 8px;
+    padding-right: 10px;*/
 }
 
+
 main{
-    background-color: darkgray;
+    background-color: #ededf6;
 }
 
 
@@ -70,7 +103,7 @@ main{
     flex: 1 30%;
     text-align: end;
     font-size: 36px;
-    
+    color: #445876;
     
     
 }
@@ -78,46 +111,60 @@ main{
 .child-2{
     flex: 2 70%;
     list-style: none;
-    border-left: 10px solid darkred;
+    border-left: 10px solid #445876;
 }
 
 .img{
-    width: 800px;
-    height: 800px;
+    position: relative;
+    width: 950px;
+    height: 950px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     
+    
 }
 
 .img-1{
-    width:600px;
+    width:800px;
     height:400px;
    
     margin-left: 30px;
+    margin-top: 10px;
+}
+
+.img-overlay{
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background: rgba(0,0,0,0,0.6);
+    color: #fff; 
+
+}
+
+.img-1:hover{
+    
+    opacity: 0.1;
 }
 
 .img-2{
-    width: 300px;
+    width: 400px;
     height: 200px;
-    
     margin-left: 30px;
-    margin-right: 10px;
+    margin-bottom: 100px;
     
 }
 .img-3{
-    width: 300px;
+    width: 400px;
     height: 200px;
-    
-   
+    margin-bottom: 100px;
+    margin-left: 10px;
 }
 
-.img-4{
-    width: 300px;
-    height: 100px;
-    
-}
+
 
 .child-2 ul{
     display: flex;
