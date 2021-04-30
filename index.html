@@ -3,7 +3,15 @@
     Date CreatedL April 26, 2021
 
     References: 
-
+    1) https://www.w3schools.com/html/html_paragraphs.asp
+    2) https://stackoverflow.com/questions/10480129/underlining-an-html-anchor-with-different-color
+    3) https://stackoverflow.com/questions/851724/css-background-image-what-is-the-correct-usage
+    4) https://www.youtube.com/watch?v=q91wYGCCwGc&ab_channel=Webdev
+    5) https://www.w3schools.com/cssref/css3_pr_background-size.asp
+    6) https://stackoverflow.com/questions/55093761/photo-collage-of-up-to-6-photos-using-flexbox
+    7) https://css-tricks.com/adaptive-photo-layout-with-flexbox/
+    8) https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/
+    
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -83,24 +91,20 @@
             <section class="child-1"> <!-- Work: Child 1 Section-->
                 <h2>My Experience</h2>
             </section>
-    
+            
             <section class="child-2"> <!-- Work: Child 2 Section-->
-                
-                
-                <section class="img">
-                    <img src="assets/img/horiseon.PNG" alt="" class="img-1" /> <!-- Images for the work done-->
-                        <div class="img-overlay">
-                            <div class="img-title">
-                                Run Buddy
-                            </div>
-                            <p class="img-des">
-                                A fun running app
-                            </p>
-                        </div>
-                    <img src="assets/img/runbuddy.PNG" alt="" class ="img-2"/> 
-                    <img src="assets/img/ledwall.jpeg" alt="" class ="img-3"/>
-                    <!--<img src="assets/img/download.png" alt="" class ="img-4"/> -->
-                </section>
+                <div class="img">
+                    <figure class="img-item-1">
+                        <img src="assets/img/runbuddy.PNG" class="img-gal"/>
+                    </figure>
+                    <figure class="img-item-2">
+                        <img src= "assets/img/horiseon.PNG" class="img-gal"/>
+                    </figure>
+                    <figure class="img-item-3">
+                        <img src="assets/img/ledwall.jpeg" class="img-gal"/>
+                    </figure>
+                </div>
+
             </section>
         </section>
         <br></br>
@@ -127,3 +131,26 @@
     </main>
 </body>
 </html>
+
+
+
+
+
+<!------------------------FORBIDDEN------------------------>
+
+    
+                
+                <!--<section class="img">
+                    <img src="assets/img/horiseon.PNG" alt="" class="img-1" />  Images for the work done--
+                        <div class="img-overlay">
+                            <div class="img-title">
+                                Run Buddy
+                            </div>
+                            <p class="img-des">
+                                A fun running app
+                            </p>
+                        </div>
+                    <img src="assets/img/runbuddy.PNG" alt="" class ="img-2"/> 
+                    <img src="assets/img/ledwall.jpeg" alt="" class ="img-3"/>
+                    !--<img src="assets/img/download.png" alt="" class ="img-4"/> --
+                </section> -->
