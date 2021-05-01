@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Header styling of the webpage */
 header{
     padding: 20px 35px; 
     background-color:#31343d;
@@ -13,14 +13,16 @@ header{
     top: 0;
 }
 
-header h1{ /*Nayandeep Sidhu */
+/* Header of h1 Name */
+header h1{ 
    
     padding-left: 50px;
     font-weight: bold;
     font-size: 36px;
     color: #31343d;
 }
-.title{ /*Nayandeep Sidhu Background */
+/* Styling of the background of the name */
+.title{ 
     background-color: #92cccd;
     position: relative;
     right: 30px;
@@ -29,7 +31,7 @@ header h1{ /*Nayandeep Sidhu */
     padding-left: 8px;
     padding-right: 10px;
 }
-
+/* Navigation section of the Header */
 header nav ul{
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +39,7 @@ header nav ul{
     align-items: center;
     list-style: none;
 }
-
+/* Anchors of the navigation of the header */
 header nav ul li a{
     padding: 20px 30px;
     font-weight: bolder;
@@ -45,14 +47,12 @@ header nav ul li a{
     font-family: Helvetica, Arial, sans-serif;
     color:#92cccd;
     text-decoration: none;
-    
-
 }
-
+/* Hovering aspect of the anchors */
 header a:hover{
     border-bottom: 4px solid #92cccd;
 }
-
+/* Controls the styling of the Hero Image */
 .background{
     background-image:url("../img/hero.PNG");
     background-position: center;
@@ -66,12 +66,13 @@ header a:hover{
     align-items: flex-end;
        
 }
+/* Controls the Styling of the text background */
 .cool-txt-bck{
     padding-bottom: 15px;
     padding-right: 20px;
 }
+/* Controls the text of the cool text */
 .cool-text {
-    
     background-color: #92cccd;
     position: relative;
     right:150px;
@@ -82,90 +83,102 @@ header a:hover{
     font-size: xx-large;
 }
 
-
+/* Selects the color of the entire webpage after header and hero image */
 main{
-    background-color: #ededf6;
+    background-color: #ededf6; 
 }
-
-
+/* Controls the styling of the parent section of the webpage; flex initiaties */
 .parent{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding-top: 10px;
 }
-
+/* Splitting flex into Child 1 with size of 30 % of the webpage */
 .child-1{
     flex: 1 30%;
     text-align: end;
     font-size: 36px;
     color: #445876;
-    
+    padding-right: 20px;
     
 }
-
+/* Splitting flex into Child 2 with size of 70% of the webpage */
 .child-2{
     flex: 2 70%;
     list-style: none;
     color: #445876;
     border-left: 10px solid #445876;
+    
 }
-
+/* About me description styling */
 .about-txt{
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     font-size: 25px;
+    padding-left: 20px;
 
 }
-
+/* Sets the grid of the Image section */
 .img{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
     grid-gap: 15px;
 }
-
+/* Sets the height and the width of the Images in the gallery */
 .img-gal{
     width: 100%;
     height: 100%;
-    object-fit:fill;
-
 }
-
+/* Controls the styling of the first image */
 .img-item-1{
     grid-column-start: 2;
     grid-column-end: 8;
     grid-row-start: 2;
     grid-row-end: 5;
     border: 10px solid #92cccd;
+    opacity:0.4;
+    overflow: hidden;
 }
-
-.img-item-1:hover{
-    
-    opacity: 0.8;
-
-}
-
-
+/* Controls the styling of the description of the first image */
 .img-des-1{
-    
     background-color: #92cccd;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 3;
-    padding-top: 20px;
+    padding-top: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-weight: bolder;
+}
+
+/* Controls the behaciour of the image 1 when mouse hovers over it */
+.img-item-1:hover{
+    opacity: 1;
+    background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start:1; 
+    grid-row-end:8;
+    background-image: url("../img/runbuddy.PNG");
     
 }
 
+/* Controls the styling of the Second image */
 .img-item-2{
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 5;
     grid-row-end: 8;
     border: 10px solid #92cccd;
+    opacity:0.4;
+    overflow: hidden;
 }
-
+/* Controls the styling of the description of the second image */
 .img-des-2{
     
     background-color: #92cccd;
@@ -173,9 +186,23 @@ main{
     grid-column-end: 3;
     grid-row-start: 6;
     grid-row-end: 6;
-    padding-top: 20px;
+    padding-top: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-weight: bolder;
     
 }
+/* Controls the behaciour of the image 2 when mouse hovers over it */
+
+.img-item-2:hover{
+    opacity: 1;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start:1; 
+    grid-row-end:8;
+}
+/* Controls the styling of the third image */
 
 .img-item-3{
     grid-column-start: 5;
@@ -183,103 +210,72 @@ main{
     grid-row-start: 5;
     grid-row-end: 8;
     border: 10px solid #92cccd;
+    opacity:0.4;
+    overflow: hidden;
 }
+/* Controls the styling of the description of the third image */
 
 .img-des-3{
-    
     background-color: #92cccd;
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 6;
     grid-row-end: 6;
     padding-top: 20px;
-    
+    padding-top: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-size: 1.2vw;
+    font-weight: bolder;
 }
+/* Controls the behaciour of the image 3 when mouse hovers over it */
 
-.contact-bord{
-    border-right: 10px solid #445876;
-    position: relative;
-    left: 10px;
+.img-item-3:hover{
+    opacity: 1;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start:1; 
+    grid-row-end:8;
 }
-
+/* Controls the styling of the text in the contacts */
 .contact-txt{
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     font-size: 25px;
-
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
-
-
+/* Controls the unordered list of child 2 of the Contact Section */
 .child-2 ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    list-style: none;
-    
+    list-style: none; 
 }
-
+/* Controls the listed items of child 2 of the content section */
 .child-2 ul li{
     margin-left: 10px;
-    margin-right: 10px;
-    
+    margin-right: 10px; 
 }
-
+/* Controls the styling of the anchored items in the content section */
 .child-2 ul li a{
     text-decoration: none;
     color: #445876
 }
-
+/* Controls the styling when mouse is hoevering over the anchors placed in the contact us section */
 .child-2 ul li a:hover{
     border-bottom: 2px solid #445876;
 }
 
+/* Start of the media queries of the webpage */
 
-/*.img{
-    position: relative;
-    width: 950px;
-    height: 950px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+@media screen and (max-width:980px){
+    .cool-txt-bck{
+        position: relative;
+        left: 150px;
+        font-size: 0.5vw;
+    }
 }
 
-.img-1{
-    width:800px;
-    height:400px;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-
-.img-overlay{
-    
-    position: relative;
-    /*top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%;
-    color: #fff;
-}
-
-.img-1:hover{
-    
-    background-color: black;
-    opacity: 0.;
-}
-
-.img-2{
-    width: 400px;
-    height: 200px;
-    margin-left: 30px;
-    margin-bottom: 100px;   
-}
-
-.img-3{
-    width: 400px;
-    height: 200px;
-    margin-bottom: 100px;
-    margin-left: 10px;
-}
-*/
