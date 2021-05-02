@@ -165,9 +165,9 @@ main{
     opacity: 1;
     background-color: black;
     grid-column-start: 1;
-    grid-column-end: 8;
+    grid-column-end: 9;
     grid-row-start:1; 
-    grid-row-end:8;
+    grid-row-end:5;
     background-image: url("../img/runbuddy.PNG");
     
 }
@@ -202,9 +202,9 @@ main{
 .img-item-2:hover{
     opacity: 1;
     grid-column-start: 1;
-    grid-column-end: 8;
-    grid-row-start:1; 
-    grid-row-end:8;
+    grid-column-end: 5;
+    grid-row-start:5; 
+    grid-row-end:9;
 }
 /* Controls the styling of the third image */
 
@@ -236,10 +236,10 @@ main{
 
 .img-item-3:hover{
     opacity: 1;
-    grid-column-start: 1;
-    grid-column-end: 8;
-    grid-row-start:1; 
-    grid-row-end:8;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start:5; 
+    grid-row-end:9;
 }
 /* Controls the styling of the text in the contacts */
 .contact-txt{
