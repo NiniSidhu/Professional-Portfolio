@@ -149,11 +149,12 @@ main{
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 3;
-    padding-top: 15px;
+    padding-top: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-left: 10px;
+    padding-left: 1px;
     font-weight: bolder;
+    font-size: 1.4vw;
 }
 
 /* Controls the behaciour of the image 1 when mouse hovers over it */
@@ -186,10 +187,10 @@ main{
     grid-column-end: 3;
     grid-row-start: 6;
     grid-row-end: 6;
-    padding-top: 15px;
+    padding-top: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-left: 10px;
+    padding-left: 1px;
     font-weight: bolder;
     
 }
@@ -221,11 +222,10 @@ main{
     grid-column-end: 6;
     grid-row-start: 6;
     grid-row-end: 6;
-    padding-top: 20px;
-    padding-top: 15px;
+    padding-top: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-left: 10px;
+    padding-left: 1px;
     font-size: 1.2vw;
     font-weight: bolder;
 }
